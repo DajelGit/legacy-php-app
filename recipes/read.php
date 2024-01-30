@@ -94,7 +94,7 @@ foreach ($recipeWithComments as $comment) {
         <?php endif; ?>
         <hr />
         <?php if (isset($loggedUser)) : ?>
-            <?php include_once '/comments/create.php'; ?>
+            <?php use comments\create; ?>
         <?php endif; ?>
     </div>
     <?php use footer; ?>
